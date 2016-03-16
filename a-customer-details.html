@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html data-ng-app="customersApp">
+<head>
+    <title>Customer Manager</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/animations.css" rel="stylesheet" />
+    <link href="Content/styles.css" rel="stylesheet" />
+    <link href="Content/bootstrap.icon-large.min" rel="stylesheet" />
+</head>
+<body data-ng-app="MyApp">
+    <header class="navbar navbar-inner navbar-fixed-top">
+        <nav class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#/">
+                    <img src="Content/images/people.png" alt="logo">
+                    <span class="appTitle">People Manager</span>
+                </a>
+            </div>
+            <div class="nav-container">
+                <ul class="nav navbar-nav nav-pills navBarPadding"
+                    data-menu-highlighter data-highlight-class-name="active">
+                    <li><a href="">Customers</a></li>
+                    <li><a href="">Orders</a></li>
+                    <li><a href="">About</a></li>
+                    <li id="nav-login">
+                        <a data-href="">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="slide-animation-container">
+        <div class="orders view">
+            <div class="container" style="margin-top:80px;">
+                <header>
+                    <h3><span class="glyphicon glyphicon-folder-open"></span>&nbsp;&nbsp;Customer Orders</h3>
+                </header>
+                <div class="container">
+                    <div class="row">
+                        <div class="span12">
+                            <div>
+                                <h4>Orders for <a href="">Chuck Norris <i class="icon-edit editIcon"></i></a></h4>
+                                address1
+                                <br />
+                                New York, New York
+                                <br /><br />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 repeat-animation">
+                        <div>
+                            <h4><a href="">Chuck Norris</a></h4>
+                        </div>
+                        <table class="table table-hover table-striped table-condensed table-bordered ordersTable">
+                            <thead>
+                                <tr>
+                                    <th>Product</th>
+                                    <th>Date</th>
+                                    <th>Quantity</th>
+                                    <th>Unit Price</th>
+                                    <th>Total</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="repeat-animation">
+                                    <td>
+                                        Lego City
+                                    </td>
+                                    <td>
+                                        04/07/2015
+                                    </td>
+                                    <td>
+                                        2
+                                    </td>
+                                    <td>
+                                        $49.99
+                                    </td>
+                                    <td>
+                                        $99.98
+                                    </td>
+                                </tr>
+                                <tr class="repeat-animation">
+                                    <td>
+                                        Needles
+                                    </td>
+                                    <td>
+                                        05/02/2015
+                                    </td>
+                                    <td>
+                                        4
+                                    </td>
+                                    <td>
+                                        $5.99
+                                    </td>
+                                    <td>
+                                        $23.96
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+           </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+    <script src="Scripts/app.js"></script>
+</body>
+</html>
